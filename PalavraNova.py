@@ -28,7 +28,7 @@ fundo = Color(cor,"","")
 
 img = Image.new('RGBA',(1920,1080),(r, g, b) )
 
-lines = open('D:/Users/rafae/Documents/Script/dicionario.txt', encoding="utf8").read().splitlines()
+lines = open('dicionario.txt', encoding="utf8").read().splitlines()
 while True:
     myline =random.choice(lines)
     response= requests.get('http://dicionario-aberto.net/search-json/'+myline)
@@ -44,7 +44,7 @@ while True:
     
 str1 = myline.upper()
 
-font =ImageFont.truetype("arial.ttf",75)
+font = ImageFont.truetype("Roboto.ttf",75)
 w,h= font.getsize(str1)
 
 draw = ImageDraw.Draw(img)
@@ -91,7 +91,7 @@ y_text = ys+100
 for line in lines:
     width, height = font.getsize(line)
     sombra(1.2,font,line,(0,0,0),(1920-width)/2,y_text,0)
-    draw.text(((1920-width)/2, y_text), line, font=font, fill=shadowcolor, align="center")
+    draw.text(((1920-width)/2, y_text), line,  font=font, fill=shadowcolor)
     y_text += height
 
 
