@@ -21,7 +21,7 @@ Run ```python PalavraNova.py```
 
 
 ## Initial Author
-* **Rafael Faustini Costa de Oliveira**  - [Organela](https://github.com/rafaelfaustini)
+* **Rafael Faustini Costa de Oliveira**  - [rafaelfaustini](https://github.com/rafaelfaustini)
 
 
 ### Contributors
